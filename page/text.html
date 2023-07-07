@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>全屏樱花飘落</title>
+</head>
+<style>
+    #train {
+        background-image: url('../img/people.png');
+        width: 347px;
+        height: 98px;
+        position: fixed;
+        bottom: 80px;
+        right: -200px;
+        z-index: 9999;
+    }
+</style>
+
+<body>
+    <div id="train"></div>
+
+    <script>
+        function moveTrain() {
+            var train = document.getElementById("train");
+            var position = parseInt(train.style.right);
+            if (position < window.innerWidth) {
+                position += 5;
+                train.style.right = position + "px";
+            } else {
+                position = -200;
+                train.style.right = position + "px";
+            }
+        }
+
+        setInterval(moveTrain, 50);
+    </script>
+</body>
+
+</html>

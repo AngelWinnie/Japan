@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京</title>
+    <link rel="stylesheet" href="../css/other.css">
+    <!-- <link rel="stylesheet" href="../css/animates.css"> -->
+    <script src="../js/home.js"></script>
+
+    <link rel="icon" href="../img/2.png">
+</head>
+
+<body>
+    <!-- 上方列 -->
+    <div style="margin: -16px;">
+        <nav class="navbar">
+            <ul>
+                <div class="montit">
+                    <li id="mountain_pic"><img class="mountain" src="../img/2.png"></li>
+                    <li class="title">日本の旅~</li>
+                </div>
+                <div class="row-top">
+                    <li class="main-page tokyo1" onclick="tokyo1()">東京</li>
+                    <li class="osaka" onclick="osaka()">大阪</li>
+                    <li class="kyushu" onclick="kyushu()">九州</li>
+                    <li class="hiroshima" onclick="hiroshima()">廣島</li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!-- 中間的圖片 -->
+    <div>
+        <img class="icon" src="../img/1.jpeg">
+        <!-- japan的圖片 -->
+    </div>
+
+    <!-- 卡片 -->
+
+    <div class="cardborder">
+        <p class="hot">東京熱門景點</p>
+        <div class="card-container">
+            <!-- 晴空塔 -->
+            <div class="card" onclick="toyko_card1()">
+                <img src="../img/4.jpeg" class="tower" title="晴空塔">
+                <h3><b class="japan cardtitle" style="padding: 5px;">晴空塔 : </b></h3>
+                <p class="cardword">
+                    東京晴空塔是位於東京都墨田區的超高層建築，高度634公尺，是世界上最高的自立式鐵塔，也是日本最新的地標之一。晴空塔提供360度全景視野，並設有觀景台、餐廳、商場等設施，是東京必遊的旅遊景點之一。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 雷門 -->
+            <div class="card card1" onclick="toyko_card2()">
+                <img src="../img/6.jpeg" class="tower" title="雷門">
+                <h3><b class="japan cardtitle" style="padding: 5px;">雷門 : </b></h3>
+                <p class="cardword">
+                    東京雷門，又稱寺廟門或雷門寺，是位於淺草寺前的日本重要文化遺產。門高約11公尺，建於1625年，門前兩側的銅製鳥居是東京最古老的鳥居之一，是東京最著名的觀光景點之一。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 明治神宮 -->
+            <div class="card card2" onclick="toyko_card3()">
+                <img src="../img/7.jpeg" class="tower" title="明治神宮">
+                <h3><b class="japan cardtitle" style="padding:5px;">明治神宮 : </b></h3>
+                <p class="cardword">
+                    東京明治神宮位於原代天皇明治及皇后昭憲妃的居所地，是日本最重要的神社之一。它是一個擁有宏偉的鳥居和神社建築的和平綠洲，吸引了許多遊客和參拜者。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 東京迪士尼 -->
+            <div class="card card3" onclick="toyko_card4()">
+                <img src="../img/11.jpeg" class="tower" title="東京迪士尼">
+                <h3><b class="japan cardtitle" style="padding:5px;">東京迪士尼 : </b></h3>
+                <p class="cardword">
+                    東京迪士尼樂園和東京迪士尼海洋是日本迪士尼度假區的兩個主題公園。東京迪士尼樂園是迪士尼樂園在亞洲的第一家分店，擁有許多經典的迪士尼主題遊樂設施，而東京迪士尼海洋則是以海洋為主題，設有許多海洋相關的遊樂設施。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="japan buy-title">地方特產</p>
+
+
+
+
+    <div class="product-container">
+        <div class="product">
+            <div class="product-word">
+                <div>
+                    <img src="../img/12.webp" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">NewYork Perfect Cheese 奶油起司脆餅</span>
+                    </p>
+                    <p class="japan buy-word">
+                        這款餅乾是由日本第一位乳酪達人、前美國白宮甜點師傅以及法國起司專家合力研發，整體像個領結造型的貓舌餅乾，酥脆細緻，內餡是濃郁起司、白巧克力、牛奶奶油，香濃入口即化。</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/13.webp" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">Yoku Moku 雪茄蛋捲</span>
+                    </p>
+                    <p class="japan buy-word">它很簡單酥香，雖說是蛋捲，但跟一般台灣吃的蛋捲不同，沒有孔洞卻也是很脆口，濃郁奶味則來自北海道生乳。</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/14.webp" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">北海道海產 乳酪干貝</span>
+                    </p>
+                    <p class="japan buy-word">
+                        北海道海產乳酪干貝是一款以北海道鮮乳和新鮮干貝製成的美食。干貝經過特殊技術烘乾，口感鮮美，搭配北海道鮮乳製成的乳酪，更增添了濃郁的香氣和滑順的口感。這種產品是日本北海道地區的特產美食之一，深受當地居民和遊客喜愛。除了作為零食品嚐，也常被用來作為餐點的配料，風味獨特，是一種值得一試的美食。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/15.webp" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">宮古島之雪鹽金楚糕</span>
+                    </p>
+                    <p class="japan buy-word">「金楚糕」是沖繩的伴手禮代表之一，它是傳統的和菓子，是由麵粉、雞蛋、豬油、紅糖混合製作，在琉球王國時期，是王族祭祀時會吃的糕點。</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/16.webp" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">LeTAO 雙層起司蛋糕</span>
+                    </p>
+                    <p class="japan buy-word">LeTAO
+                        雙層起司蛋糕是來自日本的一款著名糕點，由兩層口感豐富的起司蛋糕組成。底層是鬆軟的乳酪蛋糕，上層是口感細緻的芝士蛋糕，並且融合了法國鮮奶油的香氣。整個蛋糕味道濃郁、醇厚、滑順，並且不會過於甜膩。這款蛋糕以質量和口感著稱，深受來自世界各地的甜點愛好者的喜愛。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/17.webp" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">實千菓夾心餅乾</span>
+                    </p>
+                    <p class="japan buy-word">
+                        實千菓夾心餅乾是來自日本的一款經典餅乾，有著濃郁的花生醬香氣和鬆脆的口感，內餡則是口感豐富的巧克力或草莓果醬。這款餅乾的外層鬆脆而不硬，內層餡料甜度適中，風味獨特。實千菓夾心餅乾已有超過50年的歷史。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+
+    
+
+    <div class="buttom">
+        <div id="train"></div>
+        <hr>
+        <div class="buttom_info">
+            <p class="japan buttom_info_word">服務電話：04-1234-5678</p>
+            <a href="from.html" style="text-decoration: none;" class="buttom_info_word japan">意見留言</a>
+            <div class="buttom_pic">
+                <a href="https://www.facebook.com/VisitJapanNow"><img src="../img/fb.png" class="buttom_pic_info"></a>
+                <a href="https://www.instagram.com/visitjapantw/"><img src="../img/ig.png" class="buttom_pic_info"></a>
+                <a href="https://www.youtube.com/channel/UC2yv3psBTZsAsguKpymHdsA/videos"><img src="../img/youtube.png" class="buttom_pic_info"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../img/top.png" class="top">
+        </a>
+    </div>
+
+    
+
+    <script>
+        // 監聽使用者滾動頁面
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            // 判斷是否顯示回到頂部的按鈕
+            if (scrollPosition > 500) {
+                document.querySelector('.scroll-to-top').classList.add('show');
+            } else {
+                document.querySelector('.scroll-to-top').classList.remove('show');
+            }
+        });
+
+        function moveTrain() {
+            var train = document.getElementById("train");
+            var position = parseInt(train.style.right);
+            if (position < window.innerWidth) {
+                position += 5;
+                train.style.right = position + "px";
+            } else {
+                position = -200;
+                train.style.right = position + "px";
+            }
+        }
+
+        setInterval(moveTrain, 50);
+    </script>
+
+</body>
+
+</html>

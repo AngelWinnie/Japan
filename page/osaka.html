@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大阪</title>
+    <link rel="stylesheet" href="../css/other.css">
+    <!-- <link rel="stylesheet" href="../css/animates.css"> -->
+    <script src="../js/home.js"></script>
+
+    <link rel="icon" href="../img/2.png">
+</head>
+
+<body>
+    <!-- 上方列 -->
+    <div style="margin: -16px;">
+        <nav class="navbar">
+            <ul>
+                <div class="montit">
+                    <li id="mountain_pic"><img class="mountain" src="../img/2.png"></li>
+                    <li class="title">日本の旅~</li>
+                </div>
+                <div class="row-top">
+                    <li class="tokyo1" onclick="tokyo1()">東京</li>
+                    <li class="main-page  osaka" onclick="osaka()">大阪</li>
+                    <li class="kyushu" onclick="kyushu()">九州</li>
+                    <li class="hiroshima" onclick="hiroshima()">廣島</li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!-- 中間的圖片 -->
+    <div>
+        <img class="icon" src="../img/18.jpeg">
+        <!-- japan的圖片 -->
+    </div>
+
+    <!-- 卡片 -->
+
+    <div class="cardborder">
+        <p class="hot">大阪熱門景點</p>
+        <div class="card-container">
+            <!-- 晴空塔 -->
+            <div class="card" onclick="osaka_card1()">
+                <img src="../img/osaka1.jpeg" class="tower" title="空庭溫泉">
+                <h3><b class="japan cardtitle" style="padding: 5px;">空庭溫泉 : </b></h3>
+                <p class="cardword">
+                    空庭溫泉館內裝潢設計以大阪黃金時期安土桃山時代的城鎮為主題，重現當時熱鬧街景，置身其中令人有穿越時空的錯覺。各式主題溫泉浴池、足湯、岩盤浴、遊戲區、表演區、天空庭園、美食區等應有盡有，吃喝玩樂一應俱全。館內更設有健康沙龍與美容 Spa，提供專業護膚及按摩等多元服務項目。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 雷門 -->
+            <div class="card card1" onclick="osaka_card2()">
+                <img src="../img/osaka2.jpeg" class="tower" title="日本環球影城">
+                <h3><b class="japan cardtitle" style="padding: 5px;">日本環球影城 : </b></h3>
+                <p class="cardword">
+                    大阪環球影城是位於日本大阪的主題樂園，有眾多知名電影、漫畫和動畫等主題區域，提供刺激的遊樂設施和表演秀，吸引眾多遊客前來體驗。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 明治神宮 -->
+            <div class="card card2" onclick="osaka_card3()">
+                <img src="../img/osaka3.jpeg" class="tower" title="大阪城天守閣">
+                <h3><b class="japan cardtitle" style="padding:5px;">大阪城天守閣 : </b></h3>
+                <p class="cardword">
+                    大阪城天守閣是位於日本大阪城內的歷史建築，建於16世紀，高五層，提供俯瞰城市景色的美景，內部展示武器、甲冑和文物等展品，是大阪的著名旅遊景點。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 東京迪士尼 -->
+            <div class="card card3" onclick="osaka_card4()">
+                <img src="../img/osaka4.jpeg" class="tower" title="大阪生活今昔館">
+                <h3><b class="japan cardtitle" style="padding:5px;">大阪生活今昔館 : </b></h3>
+                <p class="cardword">
+                    大阪生活今昔館是位於日本大阪的博物館，以展示大阪市民生活史為主題，展示了不同時期的家庭生活、商店和工場等場景，讓遊客體驗大阪的歷史和文化。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="japan buy-title">地方特產</p>
+
+    <div class="product-container">
+        <div class="product">
+            <div class="product-word">
+                <div>
+                    <img src="../img/osaka5.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">老爺爺起司蛋糕(りくろーおじさんの店)</span>
+                    </p>
+                    <p class="japan buy-word">
+                        大阪老爺爺起司蛋糕是一家位於日本大阪的起司蛋糕專賣店，以厚實濃郁的起司口感聞名，其中的招牌「老爺爺起司蛋糕」更是必吃之選，店內還有各式口味的起司蛋糕可供選擇。</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/osaka6.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">PABLO半熟起司蛋糕</span>
+                    </p>
+                    <p class="japan buy-word">日本PABLO是一家起司蛋糕品牌，以其半熟濕潤的口感和濃郁的起司香氣聞名，其中的招牌「PABLO半熟起司蛋糕」是其最受歡迎的產品之一。除此之外，PABLO還提供其他口味的起司蛋糕和點心，是日本著名的美食品牌之一。</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/osaka7.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">堂島蛋糕捲</span>
+                    </p>
+                    <p class="japan buy-word">
+                        堂島蛋糕捲是日本大阪的著名甜點之一，是一種卷裹著奶油、鮮奶和糖粉的蛋糕，口感柔軟濕潤，甜度適中，味道鮮美。在大阪，堂島蛋糕捲是非常受歡迎的伴手禮之一，也是許多人喜愛的下午茶點心。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/osaka8.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">食倒太郎布丁</span>
+                    </p>
+                    <p class="japan buy-word">食倒太郎布丁是日本一款以《食戟之靈》為靈感的甜點，是一種口感柔軟、滑嫩的布丁，上方加有濃郁的焦糖醬。其特色在於每個布丁上都有以蝦餃包皮為材料的裝飾，形狀可愛且美味可口，是日本近年來的新興甜點之一。</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/osaka9.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">千鳥屋宗家</span>
+                    </p>
+                    <p class="japan buy-word">LeTAO
+                        千鳥屋宗家是日本的傳統和菓子品牌，成立於17世紀末，以製作高品質的日式和菓子而聞名，如紅豆餅、草餅、芋頭餅等。千鳥屋宗家堅持使用最優質的原材料，並保持傳統製作工藝，味道獨特，深受日本人和外國遊客的喜愛。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/osaka10.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">青木松風庵</span>
+                    </p>
+                    <p class="japan buy-word">
+                        熱銷冠軍「牛奶饅頭月化粧」，難波店限定「現烤版」，外皮微酥微硬，內餡綿密滑潤，超級好吃～
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttom">
+        <div id="train"></div>
+        <hr>
+        <div class="buttom_info">
+            <p class="japan buttom_info_word">服務電話：04-1234-5678</p>
+            <a href="from.html" style="text-decoration: none;" class="buttom_info_word japan">意見留言</a>
+            <div class="buttom_pic">
+                <a href="https://www.facebook.com/VisitJapanNow"><img src="../img/fb.png" class="buttom_pic_info"></a>
+                <a href="https://www.instagram.com/visitjapantw/"><img src="../img/ig.png" class="buttom_pic_info"></a>
+                <a href="https://www.youtube.com/channel/UC2yv3psBTZsAsguKpymHdsA/videos"><img src="../img/youtube.png" class="buttom_pic_info"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../img/top.png" class="top">
+        </a>
+    </div>
+
+    <script>
+        // 監聽使用者滾動頁面
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            // 判斷是否顯示回到頂部的按鈕
+            if (scrollPosition > 500) {
+                document.querySelector('.scroll-to-top').classList.add('show');
+            } else {
+                document.querySelector('.scroll-to-top').classList.remove('show');
+            }
+        });
+
+        function moveTrain() {
+            var train = document.getElementById("train");
+            var position = parseInt(train.style.right);
+            if (position < window.innerWidth) {
+                position += 5;
+                train.style.right = position + "px";
+            } else {
+                position = -200;
+                train.style.right = position + "px";
+            }
+        }
+
+        setInterval(moveTrain, 50);
+    </script>
+
+</body>
+
+</html>

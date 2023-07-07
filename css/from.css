@@ -1,0 +1,95 @@
+.from_border {
+    width: 80%;
+    height: 1000px;
+    text-align: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.from_info {
+    width: 500px;
+    height: 1000px;
+    margin-top: 10px;
+    font-size: 14pt;
+    text-align: left;
+    display: inline-block;
+    /* background-color: aqua; */
+}
+
+.from_info label {
+    /* width: 130px; */
+    margin-right: 5px;
+    color: blue;
+}
+
+.from_info_word {
+    width: 200px;
+    border-radius: 32px;
+    border: 2px solid lightgreen;
+}
+
+.from_info textarea {
+    width: 500px;
+    height: 300px;
+    resize: none;
+    border-radius: 10px;
+    border: 2px solid lightgreen;
+}
+
+.from_button {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: -100px;
+    right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top.show {
+    bottom: 70px;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+.bg_img {
+    position: absolute;   /* 設置圖片的位置為絕對定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+    min-width: 450px;
+}
+
+@media screen and (max-width:700px){
+    #opinion{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .bg_img{
+        background-repeat: inherit;
+    }
+}

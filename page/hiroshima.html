@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廣島</title>
+    <link rel="stylesheet" href="../css/other.css">
+    <!-- <link rel="stylesheet" href="../css/animates.css"> -->
+    <script src="../js/home.js"></script>
+
+    <link rel="icon" href="../img/2.png">
+</head>
+
+<body>
+    <!-- 上方列 -->
+    <div style="margin: -16px;">
+        <nav class="navbar">
+            <ul>
+                <div class="montit">
+                    <li id="mountain_pic"><img class="mountain" src="../img/2.png"></li>
+                    <li class="title">日本の旅~</li>
+                </div>
+                <div class="row-top">
+                    <li class="tokyo1" onclick="tokyo1()">東京</li>
+                    <li class="osaka" onclick="osaka()">大阪</li>
+                    <li class="kyushu" onclick="kyushu()">九州</li>
+                    <li class="main-page hiroshima" onclick="hiroshima()">廣島</li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!-- 中間的圖片 -->
+    <div>
+        <img class="icon" src="../img/20.jpeg">
+        <!-- japan的圖片 -->
+    </div>
+
+    <!-- 卡片 -->
+
+    <div class="cardborder">
+        <p class="hot">廣島熱門景點</p>
+        <div class="card-container">
+            <!-- 原爆圓頂館 -->
+            <div class="card" onclick="hiroshima_card1()">
+                <img src="../img/hiroshima1.jpeg" class="tower" title="原爆圓頂館">
+                <h3><b class="japan cardtitle" style="padding: 5px;">原爆圓頂館 : </b></h3>
+                <p class="cardword">
+                    「原爆圓頂館」的前身是廣島縣產業獎勵館，1945年8月6日廣島市區遭到毀滅式的核彈重擊，這棟建築物周邊幾乎夷為平地。不過建築本身的主幹卻得以倖存，以殘缺的面貌銘記著歷史上最黑暗的一刻。原爆圓頂館於1996年登錄為世界遺產，象徵著反核武、訴諸世界和平的意義，可說是廣島最具代表性的地標。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 廣島城 -->
+            <div class="card card1" onclick="hiroshima_card2()">
+                <img src="../img/hiroshima2.jpeg" class="tower" title="廣島城">
+                <h3><b class="japan cardtitle" style="padding: 5px;">廣島城 : </b></h3>
+                <p class="cardword">
+                    日本百大名城之一的「廣島城」，又有「鯉城」的別稱，最早是在戰國時代由毛利輝元所建，但原址在二戰原爆時幾乎全毀，目前的建築為1958年以後陸續依照原貌所重建的。廣島城內展示著廣島鄉土歷史及武家文化資料、刀劍展覽室等。此外也別忘了登上天守閣展望台眺望開闊的廣島市區景色。在廣島城一樓還有提供古代武士的盔甲、頭盔等服飾讓遊客換裝體驗喔
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 嚴島神社 -->
+            <div class="card card2" onclick="hiroshima_card3()">
+                <img src="../img/hiroshima3.jpeg" class="tower" title="嚴島神社">
+                <h3><b class="japan cardtitle" style="padding:5px;">嚴島神社 : </b></h3>
+                <p class="cardword">
+                    「嚴島」也稱為「宮島」，與松島、天橋立並列為「日本三景」，最知名的正是矗立在海中的紅色大鳥居，與湛藍大海、翠綠山脈相映照，從日出至日落各有風情，是許多造訪廣島的旅人都不會錯過的夢幻景點。擁有超過1,400年以上歷史的嚴島神社，自2019年起陸續進行整修工程，至2022年底已完工重見天日。推薦造訪嚴島時可先查好潮汐時段，可在退潮時走到潮間帶近距離欣賞大鳥居，也相當壯觀！
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 大久野島 -->
+            <div class="card card3" onclick="hiroshima_card4()">
+                <img src="../img/hiroshima4.jpeg" class="tower" title="大久野島">
+                <h3><b class="japan cardtitle" style="padding:5px;">大久野島 : </b></h3>
+                <p class="cardword">
+                    竹原市還有另一處非常受歡迎的景點「大久野島」，也就是知名的「兔子島」。從竹原就可以搭渡輪抵達，這座小島其實在早期曾是軍方研發化學武器的秘密基地，因此又有「毒氣島」之稱。戰後島上的實驗室全數銷毀，且還特地引進兔子繁衍，將大久野島重新打造為適合休憩觀光的公園，如今大約有500隻左右的可愛小兔子在此棲息，模樣相當療癒！
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="japan buy-title">地方特產</p>
+
+    <div class="product-container">
+        <div class="product">
+            <div class="product-word">
+                <div>
+                    <img src="../img/hiroshima5.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">にしき堂「生楓葉饅頭」</span>
+                    </p>
+                    <p class="japan buy-word">
+                        來廣島絕對不可錯過的名產就是「楓葉饅頭」了！這款糕點採用麵粉、雞蛋、蜂蜜等原料製成鬆軟外皮，再製成廣島縣樹「楓樹」的葉子形狀。「にしき堂」是昭和26年創業的和菓子店，專門生產各式各樣的楓葉饅頭，近年推出這款以米粉作為外皮原料的改良式「生楓葉饅頭」，口感更加柔軟細緻，因而大受歡迎，除了經典紅豆口味之外，還有豆沙、抹茶等，甜而不膩的淡雅滋味非常適合作為午茶點心。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/hiroshima6.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">藤い屋「淡雪花」</span>
+                    </p>
+                    <p class="japan buy-word">
+                        「藤い屋」是從宮島發跡的名店，也有販售各式各樣精緻的楓葉饅頭，不過他們還有推出另一款非常特別的糕點「淡雪花」，使用了瀨戶內海的大長檸檬果汁製成法式棉花糖，中間夾著檸檬羊羹，輕盈柔軟的口感中洋溢著檸檬的清新氣息，不管視覺或味覺都令人聯想到「雪花」的形象，可說是一款成功結合日式與西式點心的傑作。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/hiroshima7.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">ANDERSEN「瀨戶田檸檬蛋糕」</span>
+                    </p>
+                    <p class="japan buy-word">
+                        尾道市的「瀬戶田町」則是以盛產檸檬著稱，當地由於溫暖潮濕、日照充足的氣候特色，所種植出來的瀨戶田檸檬相當飽滿、光澤亮麗，帶有鮮明果香。當地烘焙坊「ANDERSEN」使用瀬戸田檸檬皮來調和蛋糕原料，再裹上一層白巧克力，就成了這款非常誘人的瀨戶田檸檬蛋糕，檸檬的清爽氣息和香甜白巧克力滋味完美融合，推薦冰鎮過後享用更好吃！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/hiroshima8.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">小野貓點心鋪「尾道布丁」</span>
+                    </p>
+                    <p class="japan buy-word">
+                        說到尾道，許多旅客應該都知道這裡是以「貓咪」打響名號的小鎮，樸實的街道上不時可以看見可愛貓咪的蹤影，而在尾道車站附近就有間「小野貓點心鋪」，所販售的布丁相當人氣！電玩《人中之龍6》也以尾道為舞台，遊戲中就有出現這款尾道布丁，也讓許多玩家特別追來尾道朝聖呢！這款布丁使用了嚴選砂谷牛奶、尾道產雞蛋以及北海道產甜菜糖製成，另外還會附上檸檬糖漿，淋在布丁享用更美味！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/hiroshima9.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">マルイチ商店「牡蠣仙貝」</span>
+                    </p>
+                    <p class="japan buy-word">
+                        「牡蠣」也是廣島名物之一，來廣島除了品嚐新鮮牡蠣之外，還可以買「牡蠣仙貝」帶回家！這款仙貝是由東廣島市安藝津町的牡蠣專賣店「マルイチ商店」推出，使用當地特產「紅土馬鈴薯」作為煎餅原料，再放上一整顆瀨戶內海牡蠣烘烤，每片仙貝上都可以看到完整的牡蠣，超奢華！滋味鹹香的仙貝與日本酒也非常搭，作為小酌的下酒點心再適合不過。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/hiroshima10.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">茶匠鑑定 茶の環「抹茶滿月」</span>
+                    </p>
+                    <p class="japan buy-word">
+                        「茶匠鑑定 茶の環」是由老字號茶行創立的抹茶專賣店，主理人認為由於廣島並非茶葉盛產地，但正因如此，反而可以用更開放的心態去認識日本全國的特色茶種。這款「抹茶滿月」蛋糕就是他們家的招牌商品，使用的是最頂級的宇治抹茶「金天閣」，特色是茶色鮮豔、滋味厚實，與奶油調和後烘烤成的蛋糕呈現美麗的草綠色澤、口感綿密柔軟，一入口就能感受到茶香緩緩蔓延，抹茶控們一定要買來品嚐。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="buttom">
+        <div id="train"></div>
+        <hr>
+        <div class="buttom_info">
+            <p class="japan buttom_info_word">服務電話：04-1234-5678</p>
+            <a href="from.html" style="text-decoration: none;" class="buttom_info_word japan">意見留言</a>
+            <div class="buttom_pic">
+                <a href="https://www.facebook.com/VisitJapanNow"><img src="../img/fb.png" class="buttom_pic_info"></a>
+                <a href="https://www.instagram.com/visitjapantw/"><img src="../img/ig.png" class="buttom_pic_info"></a>
+                <a href="https://www.youtube.com/channel/UC2yv3psBTZsAsguKpymHdsA/videos"><img src="../img/youtube.png" class="buttom_pic_info"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../img/top.png" class="top">
+        </a>
+    </div>
+
+    <script>
+        // 監聽使用者滾動頁面
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            // 判斷是否顯示回到頂部的按鈕
+            if (scrollPosition > 500) {
+                document.querySelector('.scroll-to-top').classList.add('show');
+            } else {
+                document.querySelector('.scroll-to-top').classList.remove('show');
+            }
+        });
+
+        function moveTrain() {
+            var train = document.getElementById("train");
+            var position = parseInt(train.style.right);
+            if (position < window.innerWidth) {
+                position += 5;
+                train.style.right = position + "px";
+            } else {
+                position = -200;
+                train.style.right = position + "px";
+            }
+        }
+
+        setInterval(moveTrain, 50);
+    </script>
+
+</body>
+
+</html>

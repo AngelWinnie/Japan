@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九州</title>
+    <link rel="stylesheet" href="../css/other.css">
+    <!-- <link rel="stylesheet" href="../css/animates.css"> -->
+    <script src="../js/home.js"></script>
+
+    <link rel="icon" href="../img/2.png">
+</head>
+
+<body>
+    <!-- 上方列 -->
+    <div style="margin: -16px;">
+        <nav class="navbar">
+            <ul>
+                <div class="montit">
+                    <li id="mountain_pic"><img class="mountain" src="../img/2.png"></li>
+                    <li class="title">日本の旅~</li>
+                </div>
+                <div class="row-top">
+                    <li class="tokyo1" onclick="tokyo1()">東京</li>
+                    <li class="osaka" onclick="osaka()">大阪</li>
+                    <li class="main-page kyushu" onclick="kyushu()">九州</li>
+                    <li class="hiroshima" onclick="hiroshima()">廣島</li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!-- 中間的圖片 -->
+    <div>
+        <img class="icon" src="../img/19.jpeg">
+        <!-- japan的圖片 -->
+    </div>
+
+    <!-- 卡片 -->
+
+    <div class="cardborder">
+        <p class="hot">九州熱門景點</p>
+        <div class="card-container">
+            <!-- 晴空塔 -->
+            <div class="card" onclick="kyushu_card1()">
+                <img src="../img/kyushu1.jpeg" class="tower" title="由布院/湯布院">
+                <h3><b class="japan cardtitle" style="padding: 5px;">由布院/湯布院 : </b></h3>
+                <p class="cardword">
+                    大分縣最有人氣的觀光景點就屬「湯布院」，很多旅客來過一次就會愛上而不斷再訪，由布院的絕美自然景色「由布岳」與「金鱗湖」美得讓人醉心，來由布院除了可以入住溫泉旅館享受泡湯樂趣外，觀光景點附近便是美食餐廳與伴手禮店林立的逛街大道，豐後牛、蕎麥麵、漢堡排道可樂餅、布丁甜點等由布院必吃美食都很可口，縱使入住兩天一夜也不無聊。
+                    Spa，提供專業護膚及按摩等多元服務項目。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 雷門 -->
+            <div class="card card1" onclick="kyushu_card2()">
+                <img src="../img/kyushu2.jpeg" class="tower" title="別府地獄">
+                <h3><b class="japan cardtitle" style="padding: 5px;">別府地獄 : </b></h3>
+                <p class="cardword">
+                    如果想好好享受大分縣的溫泉，絕對不能錯過別府地獄巡禮，1000年前開始在鐵輪、龜川等地噴出的熱泥、蒸氣與熱湯，使此區終年冒著熱蒸汽，宛如地獄一般，「海地獄」、「血池地獄」、「龍卷地獄」、「白池地獄」、「鬼石坊主地獄」、「鬼山地獄」與「KAMADO地獄」等截然不同的自然奇景都非常值得一訪，也別忘了溫泉蒸美食的DIY體驗喔！
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 明治神宮 -->
+            <div class="card card2" onclick="kyushu_card3()">
+                <img src="../img/kyushu3.jpeg" class="tower" title="九重夢大吊橋">
+                <h3><b class="japan cardtitle" style="padding:5px;">九重夢大吊橋 : </b></h3>
+                <p class="cardword">
+                    九重夢大吊橋位於日本大分縣九重町，是一座長度為390米的吊橋，橫跨在九重溪谷之上，是日本最長的木製吊橋。站在吊橋上可以俯瞰溪谷美景，欣賞四季風光，非常壯觀。此外，在周邊還有多條登山步道和溫泉，是一個非常適合遊客親近自然、放鬆心情的旅遊景點。
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+            <!-- 東京迪士尼 -->
+            <div class="card card3" onclick="kyushu_card4()">
+                <img src="../img/kyushu4.jpeg" class="tower" title="豪斯登堡">
+                <h3><b class="japan cardtitle" style="padding:5px;">豪斯登堡 : </b></h3>
+                <p class="cardword">
+                    飄兒心目中小小覺得長崎一個超越歐洲的美好度假村，就是日本第一大主題樂園「豪斯登堡」，他重現了中世紀的歐洲街景，除了絕美的荷蘭風車造景、歐洲建築造景，3月〜4月100萬株鬱金香花海更是美不勝收，沒有歐洲人山人海的擁擠，是個可以同時體驗歐洲美景與日本優質環境與服務的地方，園區內還有很多新科技VR遊戲，無論大人小孩或情侶都很適合！
+                </p>
+                <button class="japan more">瞭解更多</button>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="japan buy-title">地方特產</p>
+
+    <div class="product-container">
+        <div class="product">
+            <div class="product-word">
+                <div>
+                    <img src="../img/kyushu5.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">小雞饅頭</span>
+                    </p>
+                    <p class="japan buy-word">
+                        小雞饅頭是一種源自中國的傳統點心，在日本也非常受歡迎。小雞饅頭的外形像一隻可愛的小鳥，內餡多為甜豆沙或鹹肉餡料，口感蓬鬆柔軟，味道鮮美可口。在日本，小雞饅頭常常與茶一起享用，也是日本傳統茶道的一部分。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/kyushu7.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">明太子仙貝</span>
+                    </p>
+                    <p class="japan buy-word">
+                        到九州絕對不能錯過當地特產的明太子，這款福太郎的明太子仙貝是老少通吃、無人不曉的超人氣伴手禮！薄薄的一片，濃縮了明太子與各式海味的精華。口感硬脆，辛香微辣，一吃就停不下來。無論單吃、配茶或是拿來當下酒零嘴都非常棒！有原味、美乃滋、蔥、九州醬油以及福岡限定等系列可選擇。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/kyushu8.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">二◯加煎餅</span>
+                    </p>
+                    <p class="japan buy-word">
+                        看過這款煎餅的朋友，一定都對這樣的「八字眉下垂眼」設計印象深刻吧？二◯加的日文讀音是niwaka（仁和加），命名由來是當地一種類似相聲的鄉土藝術表演「博多仁和加」的面具。把雞蛋和小麥混合做成麵團後燒烤而成，酥脆的口感和甜甜的蛋香讓人怎麼吃都不會膩，加上引人發噱的面具造型，是廣受男女老少喜愛的伴手禮。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/kyushu9.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">博多之女</span>
+                    </p>
+                    <p class="japan buy-word">
+                        「博多之女」是九州家喻戶曉的經典伴手禮，用年輪蛋糕包裹著羊羹餡，結合了東洋與西洋甜品精髓，尺寸小巧適中。外層充滿了濃濃的雞蛋香，夾心是甜而不膩的紅豆羊羹，滋味高雅。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/kyushu10.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">筑紫麻糬</span>
+                    </p>
+                    <p class="japan buy-word">
+                        筑紫麻糬是源自日本福岡縣的傳統點心，以純糯米粉和紅豆為主要原料製成，口感軟糯甜美。其特色在於加入了濃郁的薑汁和糖漿，讓口感更加豐富，帶有微辣的風味。筑紫麻糬有多種口味，如葡萄、柚子、櫻花等，也是福岡地區的代表性美食之一。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-word">
+                <div class="img">
+                    <img src="../img/kyushu11.jpeg" class="img">
+                </div>
+                <div class="word">
+                    <p style="margin-top: 0;">
+                        <span class="japan product-title">鶴乃子</span>
+                    </p>
+                    <p class="japan buy-word">
+                        鶴乃子是一種源自日本的傳統點心，主要原料為糯米粉和糖。其外形呈小球狀，口感柔軟綿密，味道甜美可口。鶴乃子的特色在於內餡，常用的內餡有紅豆泥、芝麻醬等。在日本，鶴乃子是一種常見的甜點，也是重要的節慶食品之一，如日本新年期間就會食用鶴乃子。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <div class="buttom">
+        <div id="train"></div>
+        <hr>
+        <div class="buttom_info">
+            <p class="japan buttom_info_word">服務電話：04-1234-5678</p>
+            <a href="from.html" style="text-decoration: none;" class="buttom_info_word japan">意見留言</a>
+            <div class="buttom_pic">
+                <a href="https://www.facebook.com/VisitJapanNow"><img src="../img/fb.png" class="buttom_pic_info"></a>
+                <a href="https://www.instagram.com/visitjapantw/"><img src="../img/ig.png" class="buttom_pic_info"></a>
+                <a href="https://www.youtube.com/channel/UC2yv3psBTZsAsguKpymHdsA/videos"><img src="../img/youtube.png"
+                        class="buttom_pic_info"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../img/top.png" class="top">
+        </a>
+    </div>
+
+    <script>
+        // 監聽使用者滾動頁面
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            // 判斷是否顯示回到頂部的按鈕
+            if (scrollPosition > 500) {
+                document.querySelector('.scroll-to-top').classList.add('show');
+            } else {
+                document.querySelector('.scroll-to-top').classList.remove('show');
+            }
+        });
+
+        function moveTrain() {
+            var train = document.getElementById("train");
+            var position = parseInt(train.style.right);
+            if (position < window.innerWidth) {
+                position += 5;
+                train.style.right = position + "px";
+            } else {
+                position = -200;
+                train.style.right = position + "px";
+            }
+        }
+
+        setInterval(moveTrain, 50);
+    </script>
+
+</body>
+
+</html>

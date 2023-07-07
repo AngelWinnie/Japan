@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/from.css">
+
+    <link rel="icon" href="../img/2.png">
+</head>
+
+<body>
+    <div class="bg_img"></div>
+    <div class="from_border">
+        <div class="from_info">
+            <span class="required" style="color: red;">*</span>
+            <label>姓名：</label>
+            <input type="text" class="from_info_word" id="name" required>
+
+            <br><br>
+            <span class="required" style="color: red;">*</span>
+            <label>電話：</label>
+            <input type="tel" class="from_info_word" id="phone" required>
+            <br><br>
+            <span class="required" style="color: red;">*</span>
+            <label>信箱：</label>
+            <input type="email" class="from_info_word" id="mail" required>
+            <br><br>
+
+            <label>喜愛的城市：</label>
+            <select style="width: 100px; border-radius: 32px;
+            border: 2px solid lightgreen;">
+                <option value="東京">東京</option>
+                <option value="大阪">大阪</option>
+                <option value="九州">九州</option>
+                <option value="廣島">廣島</option>
+            </select>
+            <br><br>
+            <div style="text-align: left;">
+                <label>希望增加的景點：</label>
+                <span class="required" style="color: red;">*</span>
+                <input type="text" class="from_info_word" id="more" required>
+                <br>
+                <input type="text" style="margin-left: 175px;" class="from_info_word">
+                <br>
+                <input type="text" style="margin-left: 175px;" class="from_info_word">
+            </div>
+            <br>
+            <span class="required" style="color: red;">*</span>
+            <label>給予我們的意見：</label>
+            <br><br>
+            <textarea cols="30" rows="10" id="opinion" required></textarea>
+            <br><br>
+            <div>
+                <input type="button" value="提交" class="from_button" onclick="submit()">
+            </div>
+        </div>
+
+        <div class="scroll-to-top">
+            <a href="#">
+                <img src="../img/top.png" class="top"></a>
+
+            <a href="./home.html">
+                <img src="../img/house.svg" class="top">
+            </a>
+        </div>
+        
+    </div>
+
+
+    <script>
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        function submit() {
+            var name = document.getElementById('name');
+            var phone = document.getElementById('phone');
+            var mail = document.getElementById('mail');
+            var more = document.getElementById('more');
+            var opinion = document.getElementById('opinion');
+
+            if (name.value === '' || phone.value == '' || mail.value == '' || more.value == '' || opinion.value == '') {
+                alert('請填寫＊必填項目');
+                return false;
+            } else if (!validateEmail(mail.value)) {
+                alert('請輸入正確的電子郵件地址');
+                return false;
+            } else {
+                // return true;
+                location.href = '../page/home.html';
+            }
+
+
+        }
+
+        // 監聽使用者滾動頁面
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            // 判斷是否顯示回到頂部的按鈕
+            if (scrollPosition > 50) {
+                document.querySelector('.scroll-to-top').classList.add('show');
+            } else {
+                document.querySelector('.scroll-to-top').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+
+</html>
